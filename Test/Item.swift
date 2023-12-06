@@ -1,10 +1,3 @@
-//
-//  Item.swift
-//  Test
-//
-//  Created by 鈴木大輝 on 2023/12/04.
-//
-
 import Foundation
 import SwiftData
 

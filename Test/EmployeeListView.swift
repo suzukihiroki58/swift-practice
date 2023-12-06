@@ -32,22 +32,28 @@ struct EmployeeListView: View {
 }
 
 func loadEmployees() -> [Employee] {
-
-    return [
-        Employee(name: "山田太郎", position: "マネージャー"),
-        Employee(name: "佐藤花子", position: "エンジニア"),
-        Employee(name: "鈴木一郎", position: "エンジニア"),
-        Employee(name: "田中次郎", position: "デザイナー"),
-        Employee(name: "佐々木三郎", position: "マーケティング"),
-        Employee(name: "伊藤四郎", position: "セールス"),
-        Employee(name: "高橋五郎", position: "人事部"),
-        Employee(name: "渡辺六郎", position: "法務部"),
-        Employee(name: "中村七郎", position: "広報部"),
-        Employee(name: "小林八郎", position: "ITサポート"),
-        Employee(name: "加藤九郎", position: "研究開発"),
-        Employee(name: "吉田十郎", position: "経理部"),
-        Employee(name: "村本咲", position: "経理部"),
-        Employee(name: "都築大地", position: "法務部"),
-        Employee(name: "高橋敬人", position: "広報部"),
-    ]
+    var employees: [Employee] = []
+    
+    guard let filePath = Bundle.main.path(forResource: "社員一覧", ofType: "csv") else {
+        return employees
+    }
+    
+    do {
+        let contents = try String(contentsOfFile: filePath)
+        let lines = contents.split(separator: "\n")
+        
+        for line in lines {
+            let components = line.split(separator: ",", maxSplits: 1, omittingEmptySubsequences: false)
+            if components.count == 2 {
+                let name = String(components[0])
+                let position = String(components[1])
+                employees.append(Employee(name: name, position: position))
+            }
+        }
+    } catch {
+        print("ファイルの読み込みに失敗しました: \(error)")
+    }
+    
+    return employees
+    
 }

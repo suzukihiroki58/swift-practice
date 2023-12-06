@@ -8,19 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		330592A62B1D9259002CACCE /* TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330592A52B1D9259002CACCE /* TestApp.swift */; };
-		330592A82B1D9259002CACCE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330592A72B1D9259002CACCE /* ContentView.swift */; };
+		330592A82B1D9259002CACCE /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330592A72B1D9259002CACCE /* MenuView.swift */; };
 		330592AA2B1D9259002CACCE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330592A92B1D9259002CACCE /* Item.swift */; };
 		330592AC2B1D925B002CACCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 330592AB2B1D925B002CACCE /* Assets.xcassets */; };
 		330592AF2B1D925B002CACCE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 330592AE2B1D925B002CACCE /* Preview Assets.xcassets */; };
+		330592B62B1DAF7F002CACCE /* EmployeeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330592B52B1DAF7F002CACCE /* EmployeeListView.swift */; };
+		330592BC2B2029CA002CACCE /* 社員一覧.csv in Resources */ = {isa = PBXBuildFile; fileRef = 330592BB2B2029CA002CACCE /* 社員一覧.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		330592A22B1D9259002CACCE /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		330592A52B1D9259002CACCE /* TestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApp.swift; sourceTree = "<group>"; };
-		330592A72B1D9259002CACCE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		330592A72B1D9259002CACCE /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		330592A92B1D9259002CACCE /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		330592AB2B1D925B002CACCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		330592AE2B1D925B002CACCE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		330592B52B1DAF7F002CACCE /* EmployeeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListView.swift; sourceTree = "<group>"; };
+		330592BB2B2029CA002CACCE /* 社員一覧.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "社員一覧.csv"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +57,10 @@
 		330592A42B1D9259002CACCE /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				330592BB2B2029CA002CACCE /* 社員一覧.csv */,
 				330592A52B1D9259002CACCE /* TestApp.swift */,
-				330592A72B1D9259002CACCE /* ContentView.swift */,
+				330592A72B1D9259002CACCE /* MenuView.swift */,
+				330592B52B1DAF7F002CACCE /* EmployeeListView.swift */,
 				330592A92B1D9259002CACCE /* Item.swift */,
 				330592AB2B1D925B002CACCE /* Assets.xcassets */,
 				330592AD2B1D925B002CACCE /* Preview Content */,
@@ -129,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				330592AF2B1D925B002CACCE /* Preview Assets.xcassets in Resources */,
+				330592BC2B2029CA002CACCE /* 社員一覧.csv in Resources */,
 				330592AC2B1D925B002CACCE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,7 +147,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				330592A82B1D9259002CACCE /* ContentView.swift in Sources */,
+				330592A82B1D9259002CACCE /* MenuView.swift in Sources */,
+				330592B62B1DAF7F002CACCE /* EmployeeListView.swift in Sources */,
 				330592AA2B1D9259002CACCE /* Item.swift in Sources */,
 				330592A62B1D9259002CACCE /* TestApp.swift in Sources */,
 			);

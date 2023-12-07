@@ -40,7 +40,7 @@ func loadEmployees() -> [Employee] {
     
     do {
         let contents = try String(contentsOfFile: filePath)
-        let lines = contents.split(separator: "\n")
+        let lines = contents.components(separatedBy: .newlines)
         
         for line in lines {
             let components = line.split(separator: ",", maxSplits: 1, omittingEmptySubsequences: false)
